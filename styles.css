@@ -1,0 +1,114 @@
+* {
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  background-color: black;
+  margin: 0;
+}
+
+a,
+a:link,
+a:active,
+a:visited {
+  color: black;
+}
+
+a:hover,
+a:focus {
+  color: grey;
+}
+
+h1 {
+  margin: 0;
+}
+
+h2 {
+  border-bottom: 1px solid black;
+  margin: 0 0 5px;
+  padding-bottom: 5px;
+  width: 100%;
+}
+
+h3 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0; 
+}
+
+.center-column {
+  background-color: white;
+  max-width: 840px;
+  margin: auto;
+  padding: 20px;
+}
+
+.section {
+  margin-bottom: 30px; 
+}
+
+.personal-info {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.personal-info .name {
+  font-weight: bold;
+  font-size: 48px;
+}
+
+.personal-info .contact-info {
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+}
+
+.personal-info .contact-info .email,
+.personal-info .contact-info .github {
+  font-weight: bold;
+}
+
+.skills .skill {
+}
+
+.skills .interests {
+  margin: 0 0 10px 20px;
+}
+
+.experience .job {
+   margin-bottom: 10px;
+}
+
+.experience .job .info {
+  display: flex;
+  flex-direction: row;
+}
+
+.experience .job .info > * {
+  line-height: 28px;
+}
+
+
+.experience .job .info .position,
+.experience .job .info .location {
+  margin-right: 5px;
+}
+
+@media print {
+  body {
+    background-color: initial;
+  }
+  
+  .center-column {
+    max-width: none;
+  }
+}
